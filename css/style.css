@@ -1,0 +1,64 @@
+body {
+  font-family: arial;
+  line-height: 24px;
+  margin: 40px 0; }
+
+.center {
+  width: 960px;
+  margin: auto; }
+
+.tab {
+  margin: 30px 0;
+  transition: 1s;
+  overflow: hidden; }
+
+ul.tab-menu {
+  list-style-type: none;
+  border: 1px solid #ccc;
+  display: inline-block;
+  position: relative; }
+  ul.tab-menu li {
+    float: left;
+    background-color: #f1f1f1; }
+    ul.tab-menu li a {
+      display: inline-block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 17px; }
+      ul.tab-menu li a:hover {
+        background-color: #ddd; }
+      ul.tab-menu li a:focus {
+        background-color: #ccc; }
+    ul.tab-menu li .active-tab {
+      background-color: #ccc; }
+
+.tabcontent {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  width: 500px;
+  line-height: 30px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s; }
+
+.active-tab + div {
+  display: block; }
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/*# sourceMappingURL=style.css.map */
